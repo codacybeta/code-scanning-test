@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run codacy-analysis-cli
-        uses: codacy/codacy-analysis-cli@6a3a1d2e1e8442665528d3d26b8366c7c53ef04b
+        uses: codacy/codacy-analysis-cli@51672f8f474a63eb92fa12962d789d3ea460b551
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          directory: ${{ github.workspace }}
