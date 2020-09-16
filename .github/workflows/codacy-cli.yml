@@ -8,10 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-        with:
-          path: "path-test"
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli@51672f8f474a63eb92fa12962d789d3ea460b551
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          directory: "${{ github.workspace }}/path-test"
+          directory: "${{ env.GITHUB_WORKSPACE }}"
