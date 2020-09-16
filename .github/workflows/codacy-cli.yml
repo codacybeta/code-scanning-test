@@ -12,4 +12,3 @@ jobs:
         uses: codacy/codacy-analysis-cli@51672f8f474a63eb92fa12962d789d3ea460b551
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          directory: ${{ github.workspace }}
