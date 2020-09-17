@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run codacy-analysis-cli
-        uses: codacy/codacy-analysis-cli@dbae0ec
+        uses: codacy/codacy-analysis-cli@facfd43
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          verbose: true
+          output: cenas.txt
