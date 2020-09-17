@@ -12,5 +12,4 @@ jobs:
         uses: codacy/codacy-analysis-cli@21a940b
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          output: cenas.txt
           verbose: true
