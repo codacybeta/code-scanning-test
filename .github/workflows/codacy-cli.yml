@@ -13,3 +13,4 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           output: cenas.txt
+          verbose: true
