@@ -12,4 +12,4 @@ jobs:
         uses: codacy/codacy-analysis-cli@e1c60d5
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          verbose: false
+          verbose: true
