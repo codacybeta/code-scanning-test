@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
       - name: Run codacy-analysis-cli
-        uses: codacy/codacy-analysis-cli@3fc24a6
+        uses: codacy/codacy-analysis-cli@6a34606
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           verbose: true
