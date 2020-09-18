@@ -16,7 +16,7 @@ jobs:
           verbose: true
           output: results.sarif
           format: sarif
-          max-issues-allowed: 90
+          max-allowed-issues: 90
       - name: Upload results file
         uses: github/codeql-action/upload-sarif@v1
         with:
