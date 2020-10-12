@@ -27,6 +27,7 @@ jobs:
           verbose: true
           output: results.sarif
           format: sarif
+          gh-code-scanning-compat: true
           # Force 0 exit code to allow sarif file generation
           # This will pass control about PR rejection to GitHub side
           max-allowed-issues: 2147483647
